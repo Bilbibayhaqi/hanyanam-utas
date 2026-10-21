@@ -1,0 +1,819 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart Climbers Companion, rancangan perangkat wearable untuk mendeteksi indikasi jatuh dan hipotermia serta mengirimkan lokasi darurat pendaki tanpa jaringan seluler.">
+    <title>Smart Climbers Companion | Mountain Safety Technology</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="brand">
+            <div class="brand-icon">
+                <img src="logo anjay.png"
+            </div>
+            <div class="brand-text">
+                <strong>SMART CLIMBERS</strong>
+                <span>COMPANION</span>
+            </div>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Buka menu navigasi"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang</a>
+            <a href="#features">Fitur</a>
+            <a href="#technology">Teknologi</a>
+            <a href="#how-it-works">Cara Kerja</a>
+            <a href="#specifications">Spesifikasi</a>
+            <a href="#team" class="nav-cta">Tim Kami ↗</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="eyebrow light">
+                    <span class="status-dot"></span>
+                    INOVASI KESELAMATAN PENDAKIAN
+                </div>
+
+                <h1>
+                    Adventure<br>
+                    <span>Without Blind Spots.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Teknologi wearable yang dirancang untuk mendeteksi
+                    indikasi bahaya dan membantu mengirimkan lokasi darurat
+                    pendaki, bahkan di wilayah tanpa jaringan seluler.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">
+                        Kenali Inovasinya <span>↗</span>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-outline">
+                        Pelajari Cara Kerja
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span>01</span>
+                    <p>SMART TECHNOLOGY FOR MOUNTAIN SAFETY</p>
+                </div>
+            </div>
+
+            <div class="hero-side-label">DESIGNED FOR THE UNCONNECTED WILDERNESS</div>
+
+            <div class="hero-bottom">
+                <div>
+                    <span class="hero-bottom-label">OUR MISSION</span>
+                    <p>Menghubungkan pendaki dengan pertolongan saat dibutuhkan.</p>
+                </div>
+                <a href="#features" class="scroll-indicator">
+                    SCROLL TO EXPLORE <span>↓</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="intro section-padding" id="about">
+            <div class="section-label">01 / THE CHALLENGE</div>
+
+            <div class="intro-grid">
+                <div>
+                    <p class="eyebrow">MENGAPA INOVASI INI DIBUTUHKAN?</p>
+                    <h2>
+                        Ketika alam indah,<br>
+                        <span>keselamatan tetap utama.</span>
+                    </h2>
+                </div>
+
+                <div class="intro-copy">
+                    <p>
+                        Pendakian gunung menghadirkan tantangan berupa medan
+                        ekstrem, perubahan suhu, risiko terjatuh, dan kemungkinan
+                        tersesat. Situasi menjadi lebih sulit ketika pendaki
+                        berada di wilayah yang tidak terjangkau sinyal seluler.
+                    </p>
+                    <p>
+                        Dalam kondisi darurat, pendaki mungkin tidak mampu
+                        menggunakan ponsel untuk meminta bantuan. Karena itu,
+                        diperlukan rancangan perangkat yang dapat mendeteksi
+                        indikasi bahaya dan membantu mengirimkan koordinat
+                        lokasi secara otomatis.
+                    </p>
+                </div>
+            </div>
+
+            <div class="challenge-grid">
+                <article class="challenge-card">
+                    <div class="card-number">01</div>
+                    <div class="challenge-icon">⌁</div>
+                    <h3>Risiko Terjatuh</h3>
+                    <p>
+                        Perubahan gerakan yang mengindikasikan insiden jatuh
+                        dirancang untuk dideteksi menggunakan sensor IMU.
+                    </p>
+                </article>
+
+                <article class="challenge-card">
+                    <div class="card-number">02</div>
+                    <div class="challenge-icon">❄</div>
+                    <h3>Indikasi Hipotermia</h3>
+                    <p>
+                        Sensor suhu memantau penurunan suhu untuk mengenali
+                        kondisi yang memerlukan perhatian lebih lanjut.
+                    </p>
+                </article>
+
+                <article class="challenge-card">
+                    <div class="card-number">03</div>
+                    <div class="challenge-icon">⌖</div>
+                    <h3>Wilayah Blank Spot</h3>
+                    <p>
+                        Komunikasi darurat dirancang menggunakan radio LoRa
+                        sehingga tidak bergantung pada jaringan seluler.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PRODUCT -->
+        <section class="product-section section-padding">
+            <div class="product-grid">
+                <div class="product-visual">
+                    <div class="visual-glow"></div>
+                    <div class="product-orbit orbit-one"></div>
+                    <div class="product-orbit orbit-two"></div>
+
+                    <div class="product-placeholder">
+                        <div class="placeholder-cross">+</div>
+                        <div class="device-symbol">SCC</div>
+                        <div class="device-line"></div>
+                        <p>WEARABLE SAFETY SYSTEM</p>
+                        <span>HARNESS INTEGRATION</span>
+                    </div>
+
+                    <div class="floating-tag tag-top">
+                        <span class="mini-dot"></span>
+                        FALL DETECTION
+                    </div>
+
+                    <div class="floating-tag tag-bottom">
+                        <span>⌖</span> EMERGENCY LOCATION
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="section-label">MEET THE CONCEPT</div>
+                    <p class="eyebrow">SMART CLIMBERS COMPANION</p>
+
+                    <h2>
+                        Bukan sekadar alat.<br>
+                        <span>Teman keselamatan.</span>
+                    </h2>
+
+                    <p>
+                        Smart Climbers Companion adalah rancangan perangkat
+                        wearable berbasis Internet of Things (IoT) yang
+                        terintegrasi pada chest harness pendaki.
+                    </p>
+
+                    <p>
+                        Sistem ini menggabungkan sensor gerak, sensor suhu,
+                        GPS, dan komunikasi LoRa untuk mendukung deteksi
+                        otomatis indikasi bahaya serta pengiriman koordinat
+                        darurat ke unit penerima di basecamp.
+                    </p>
+
+                    <div class="product-points">
+                        <div><span>✓</span> Deteksi indikasi bahaya otomatis</div>
+                        <div><span>✓</span> Pelacakan koordinat GPS saat darurat</div>
+                        <div><span>✓</span> Komunikasi radio tanpa jaringan seluler</div>
+                        <div><span>✓</span> Rancangan hemat daya</div>
+                    </div>
+
+                    <a href="#technology" class="text-link">
+                        Jelajahi teknologi <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <p class="disclaimer">
+                Visual perangkat pada halaman ini merupakan ilustrasi konsep,
+                bukan foto prototipe fisik yang telah selesai dibuat.
+            </p>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features-section section-padding" id="features">
+            <div class="section-heading">
+                <div>
+                    <div class="section-label">02 / CORE FEATURES</div>
+                    <h2>Dirancang untuk<br><span>menghadapi keadaan darurat.</span></h2>
+                </div>
+                <p>
+                    Setiap fitur dirancang untuk membantu mengenali indikasi
+                    bahaya dan mendukung proses pencarian pendaki.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card feature-main">
+                    <div class="feature-top">
+                        <span class="feature-icon">⌁</span>
+                        <span class="feature-index">FEATURE 01</span>
+                    </div>
+                    <div>
+                        <h3>Automatic Fall Detection</h3>
+                        <p>
+                            Sensor IMU Bosch BMI160 membaca perubahan gerak
+                            dan percepatan. Ketika pola gerak memenuhi
+                            kriteria deteksi jatuh yang ditentukan, sensor
+                            dapat memicu mikrokontroler melalui hardware
+                            interrupt.
+                        </p>
+                    </div>
+                    <span class="feature-decoration">01</span>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-top">
+                        <span class="feature-icon">❄</span>
+                        <span class="feature-index">FEATURE 02</span>
+                    </div>
+                    <h3>Temperature Monitoring</h3>
+                    <p>
+                        Sensor DS18B20 memantau suhu pada area dada atau
+                        kerah. Rancangan menggunakan ambang suhu di bawah
+                        30°C selama 15 menit berturut-turut sebagai pemicu
+                        peringatan indikasi hipotermia.
+                    </p>
+                    <div class="feature-bottom-label">DS18B20 · 1-WIRE</div>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-top">
+                        <span class="feature-icon">⌖</span>
+                        <span class="feature-index">FEATURE 03</span>
+                    </div>
+                    <h3>Emergency GPS Tracking</h3>
+                    <p>
+                        Saat kondisi darurat terdeteksi, GPS u-blox NEO-6M
+                        diaktifkan untuk memperoleh koordinat lokasi yang
+                        kemudian disiapkan untuk dikirimkan.
+                    </p>
+                    <div class="feature-bottom-label">U-BLOX NEO-6M</div>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-top">
+                        <span class="feature-icon">⌁</span>
+                        <span class="feature-index">FEATURE 04</span>
+                    </div>
+                    <h3>Off-Grid Communication</h3>
+                    <p>
+                        Modul LoRa SX1278 pada pita 433 MHz dirancang
+                        untuk mengirimkan paket darurat berisi identitas
+                        perangkat dan koordinat menuju gateway di basecamp,
+                        tanpa bergantung pada jaringan seluler.
+                    </p>
+                    <div class="feature-bottom-label">LORA · 433 MHz</div>
+                </article>
+
+                <article class="feature-card feature-wide">
+                    <div class="feature-top">
+                        <span class="feature-icon">ϟ</span>
+                        <span class="feature-index">FEATURE 05</span>
+                    </div>
+                    <div class="wide-feature-content">
+                        <h3>Smart Power Management</h3>
+                        <p>
+                            Sistem dirancang untuk mengutamakan mode tidur
+                            ketika tidak ada keadaan darurat. Sakelar daya
+                            MOSFET P-Channel Si2301 memutus suplai GPS ketika
+                            tidak digunakan untuk membantu menghemat energi.
+                        </p>
+                    </div>
+                    <div class="power-visual">
+                        <span>LOW POWER</span>
+                        <div class="power-bars"><i></i><i></i><i></i><i></i><i></i></div>
+                        <small>ENERGY EFFICIENT DESIGN</small>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="workflow-section section-padding" id="how-it-works">
+            <div class="section-label">03 / SYSTEM WORKFLOW</div>
+            <div class="section-heading">
+                <div>
+                    <h2>Dari deteksi hingga<br><span>pesan darurat.</span></h2>
+                </div>
+                <p>
+                    Sistem dirancang menggunakan alur otomatis agar informasi
+                    lokasi dapat disiapkan dan dikirim ketika terdeteksi
+                    kondisi yang memenuhi kriteria darurat.
+                </p>
+            </div>
+
+            <div class="workflow">
+                <article class="workflow-step">
+                    <div class="workflow-number">01</div>
+                    <div class="workflow-icon">◉</div>
+                    <h3>Pemantauan</h3>
+                    <p>
+                        Sensor BMI160 memantau gerakan, sementara DS18B20
+                        membaca suhu secara berkala.
+                    </p>
+                </article>
+
+                <div class="workflow-arrow">→</div>
+
+                <article class="workflow-step">
+                    <div class="workflow-number">02</div>
+                    <div class="workflow-icon">⚡</div>
+                    <h3>Deteksi Bahaya</h3>
+                    <p>
+                        Kriteria jatuh atau ambang suhu yang ditentukan
+                        memicu proses darurat.
+                    </p>
+                </article>
+
+                <div class="workflow-arrow">→</div>
+
+                <article class="workflow-step">
+                    <div class="workflow-number">03</div>
+                    <div class="workflow-icon">⌖</div>
+                    <h3>Ambil Koordinat</h3>
+                    <p>
+                        GPS diaktifkan untuk memperoleh data lokasi pendaki.
+                    </p>
+                </article>
+
+                <div class="workflow-arrow">→</div>
+
+                <article class="workflow-step">
+                    <div class="workflow-number">04</div>
+                    <div class="workflow-icon">⌁</div>
+                    <h3>Kirim ke Basecamp</h3>
+                    <p>
+                        Data darurat dipancarkan melalui LoRa ke unit
+                        gateway yang disiapkan di basecamp.
+                    </p>
+                </article>
+            </div>
+
+            <div class="workflow-note">
+                <span>ⓘ</span>
+                <p>
+                    Alur ini merupakan rancangan sistem. Keberhasilan
+                    deteksi, penerimaan paket, dan penentuan lokasi tetap
+                    memerlukan pengujian perangkat nyata di lapangan.
+                </p>
+            </div>
+        </section>
+
+        <!-- TECHNOLOGY -->
+        <section class="technology-section section-padding" id="technology">
+            <div class="section-label">04 / TECHNOLOGY INSIDE</div>
+            <div class="section-heading">
+                <div>
+                    <h2>Teknologi di balik<br><span>Smart Climbers Companion.</span></h2>
+                </div>
+                <p>
+                    Komponen dipilih dengan mempertimbangkan konsumsi daya,
+                    ukuran, fungsi, dan kebutuhan lingkungan pendakian.
+                </p>
+            </div>
+
+            <div class="technology-grid">
+
+                <article class="tech-card">
+                    <div class="tech-top">
+                        <span class="tech-symbol">CPU</span>
+                        <span class="tech-category">PROCESSING</span>
+                    </div>
+                    <h3>Pro Micro nRF52840</h3>
+                    <p>
+                        Mikrokontroler utama yang memproses data sensor,
+                        menjalankan logika darurat, dan mengatur komunikasi
+                        antarkomponen.
+                    </p>
+                    <span class="tech-detail">Fokus: ultra-low-power</span>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-top">
+                        <span class="tech-symbol">IMU</span>
+                        <span class="tech-category">MOVEMENT</span>
+                    </div>
+                    <h3>Bosch BMI160</h3>
+                    <p>
+                        Sensor inersia 6-DoF untuk membaca percepatan dan
+                        gerakan serta mendukung pemicu deteksi jatuh.
+                    </p>
+                    <span class="tech-detail">Interface: I²C</span>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-top">
+                        <span class="tech-symbol">°C</span>
+                        <span class="tech-category">TEMPERATURE</span>
+                    </div>
+                    <h3>DS18B20</h3>
+                    <p>
+                        Sensor suhu digital yang ditempatkan di area dada
+                        atau kerah melalui kabel ekstensi.
+                    </p>
+                    <span class="tech-detail">Interface: 1-Wire</span>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-top">
+                        <span class="tech-symbol">GPS</span>
+                        <span class="tech-category">POSITIONING</span>
+                    </div>
+                    <h3>u-blox NEO-6M</h3>
+                    <p>
+                        Modul penerima satelit untuk memperoleh koordinat
+                        lokasi saat proses darurat berlangsung.
+                    </p>
+                    <span class="tech-detail">Interface: UART</span>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-top">
+                        <span class="tech-symbol">RF</span>
+                        <span class="tech-category">COMMUNICATION</span>
+                    </div>
+                    <h3>LoRa SX1278</h3>
+                    <p>
+                        Modul radio untuk mengirim paket data berukuran
+                        kecil ke gateway di basecamp melalui pita 433 MHz.
+                    </p>
+                    <span class="tech-detail">Interface: SPI</span>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-top">
+                        <span class="tech-symbol">BAT</span>
+                        <span class="tech-category">POWER</span>
+                    </div>
+                    <h3>Baterai Li-ion 21700</h3>
+                    <p>
+                        Sumber daya utama dengan kapasitas yang direncanakan
+                        sekitar 4.000–5.000 mAh untuk mendukung operasional
+                        perangkat.
+                    </p>
+                    <span class="tech-detail">Power gating: Si2301</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- TECHNICAL SPECIFICATIONS -->
+        <section class="spec-section section-padding" id="specifications">
+            <div class="spec-header">
+                <div>
+                    <div class="section-label">05 / TECHNICAL OVERVIEW</div>
+                    <h2>Spesifikasi<br><span>rancangan sistem.</span></h2>
+                </div>
+                <p>
+                    Berikut ringkasan spesifikasi berdasarkan dokumen
+                    perancangan Smart Climbers Companion.
+                </p>
+            </div>
+
+            <div class="spec-table-wrap">
+                <table class="spec-table">
+                    <thead>
+                        <tr>
+                            <th>Komponen</th>
+                            <th>Spesifikasi</th>
+                            <th>Fungsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mikrokontroler</td>
+                            <td>Pro Micro nRF52840</td>
+                            <td>Pemrosesan data dan kontrol sistem</td>
+                        </tr>
+                        <tr>
+                            <td>Sensor gerak</td>
+                            <td>Bosch BMI160 6-DoF</td>
+                            <td>Deteksi pola gerakan dan indikasi jatuh</td>
+                        </tr>
+                        <tr>
+                            <td>Sensor suhu</td>
+                            <td>DS18B20</td>
+                            <td>Pemantauan suhu untuk indikasi hipotermia</td>
+                        </tr>
+                        <tr>
+                            <td>Modul GPS</td>
+                            <td>u-blox NEO-6M</td>
+                            <td>Pengambilan koordinat lokasi</td>
+                        </tr>
+                        <tr>
+                            <td>Modul komunikasi</td>
+                            <td>Semtech SX1278 · 433 MHz</td>
+                            <td>Transmisi data darurat melalui LoRa</td>
+                        </tr>
+                        <tr>
+                            <td>Sakelar daya GPS</td>
+                            <td>MOSFET P-Channel Si2301</td>
+                            <td>Mengatur suplai daya GPS</td>
+                        </tr>
+                        <tr>
+                            <td>Baterai</td>
+                            <td>Li-ion 21700 · sekitar 4.000–5.000 mAh</td>
+                            <td>Sumber daya perangkat</td>
+                        </tr>
+                        <tr>
+                            <td>Casing</td>
+                            <td>PA-CF + bumper TPU 95A</td>
+                            <td>Perlindungan dan peredaman benturan</td>
+                        </tr>
+                        <tr>
+                            <td>Firmware</td>
+                            <td>Bahasa C · Zephyr RTOS</td>
+                            <td>Pengaturan alur dan manajemen daya</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="spec-note-grid">
+                <div class="spec-note">
+                    <span class="note-icon">ϟ</span>
+                    <div>
+                        <h3>Efisiensi energi</h3>
+                        <p>
+                            Rancangan memprioritaskan deep sleep dan
+                            mengaktifkan GPS ketika dibutuhkan.
+                        </p>
+                    </div>
+                </div>
+                <div class="spec-note">
+                    <span class="note-icon">⌁</span>
+                    <div>
+                        <h3>Komunikasi mandiri</h3>
+                        <p>
+                            LoRa dirancang untuk komunikasi radio tanpa
+                            ketergantungan pada jaringan seluler.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="technical-disclaimer">
+                Catatan: angka ketahanan baterai dan jangkauan komunikasi
+                merupakan estimasi atau bergantung pada kondisi operasional.
+                Dokumen ini menyajikan evaluasi teoretis; performa nyata
+                belum dapat dianggap tervalidasi sebelum pengujian lapangan.
+            </p>
+        </section>
+
+        <!-- MATERIAL & DESIGN -->
+        <section class="design-section section-padding">
+            <div class="design-grid">
+                <div class="design-copy">
+                    <div class="section-label">06 / BUILT FOR THE OUTDOORS</div>
+                    <h2>Ringkas, tangguh,<br><span>dan terintegrasi.</span></h2>
+                    <p>
+                        Perangkat dirancang agar dapat dipasang pada chest
+                        harness tanpa mengganggu gerakan pendaki. Sensor
+                        suhu ditempatkan terpisah menuju area dada atau
+                        kerah untuk pemantauan suhu.
+                    </p>
+
+                    <div class="material-item">
+                        <span class="material-number">01</span>
+                        <div>
+                            <h3>PA-CF — Outer Shell</h3>
+                            <p>
+                                Nylon yang diperkuat serat karbon sebagai
+                                material cangkang luar dengan fokus pada
+                                kekuatan dan ketahanan gesekan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="material-item">
+                        <span class="material-number">02</span>
+                        <div>
+                            <h3>TPU 95A — Shock Absorber</h3>
+                            <p>
+                                Material fleksibel yang dirancang sebagai
+                                bumper untuk membantu meredam benturan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="material-item">
+                        <span class="material-number">03</span>
+                        <div>
+                            <h3>Integrated Harness</h3>
+                            <p>
+                                Penempatan modul utama pada harness dan
+                                sensor suhu pada area tubuh yang ditentukan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="design-visual">
+                    <div class="design-circle circle-large"></div>
+                    <div class="design-circle circle-small"></div>
+                    <div class="design-card">
+                        <div class="design-card-top">
+                            <span>SCC / DESIGN NOTES</span>
+                            <span>06.01</span>
+                        </div>
+                        <div class="design-blueprint">
+                            <div class="blueprint-device">
+                                <span>SCC</span>
+                            </div>
+                            <div class="blueprint-line line-a"></div>
+                            <div class="blueprint-line line-b"></div>
+                            <div class="blueprint-line line-c"></div>
+                            <span class="blueprint-label label-a">MAIN UNIT</span>
+                            <span class="blueprint-label label-b">SENSOR</span>
+                            <span class="blueprint-label label-c">HARNESS</span>
+                        </div>
+                        <div class="design-card-bottom">
+                            <span>CONCEPTUAL DESIGN</span>
+                            <span>PA-CF / TPU 95A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESEARCH METHOD -->
+        <section class="method-section section-padding">
+            <div class="section-label">07 / RESEARCH APPROACH</div>
+            <div class="section-heading">
+                <div>
+                    <h2>Berangkat dari masalah,<br><span>menuju rancangan.</span></h2>
+                </div>
+                <p>
+                    Pengembangan konsep menggunakan Design Thinking yang
+                    diintegrasikan dengan pendekatan mixed methods.
+                </p>
+            </div>
+
+            <div class="method-grid">
+                <article>
+                    <span>01</span>
+                    <h3>Identifikasi Masalah</h3>
+                    <p>
+                        Mengkaji risiko pendakian, keterbatasan jaringan,
+                        dan kebutuhan keselamatan.
+                    </p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Analisis Kebutuhan</h3>
+                    <p>
+                        Menentukan fungsi, komponen, kebutuhan energi,
+                        dan rancangan komunikasi.
+                    </p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Perancangan Sistem</h3>
+                    <p>
+                        Menyusun arsitektur perangkat keras, firmware,
+                        material casing, dan alur darurat.
+                    </p>
+                </article>
+                <article>
+                    <span>04</span>
+                    <h3>Evaluasi Teoretis</h3>
+                    <p>
+                        Menelaah kelayakan rancangan berdasarkan literatur
+                        dan spesifikasi teknis komponen.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- TEAM -->
+        <section class="team-section section-padding" id="team">
+            <div class="team-heading">
+                <div class="section-label">08 / THE PEOPLE BEHIND THE IDEA</div>
+                <h2>Meet the <span>team.</span></h2>
+                <p>
+                    Kolaborasi untuk mengembangkan gagasan teknologi
+                    keselamatan pendakian.
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <article class="team-card">
+                    <div class="team-avatar">IA</div>
+                    <span class="team-role">RESEARCH TEAM</span>
+                    <h3>Ilzan Afwansyah</h3>
+                </article>
+                <article class="team-card">
+                    <div class="team-avatar">AS</div>
+                    <span class="team-role">RESEARCH TEAM</span>
+                    <h3>Anindhita Arfany Sudibyo</h3>
+                </article>
+                <article class="team-card">
+                    <div class="team-avatar">BB</div>
+                    <span class="team-role">RESEARCH TEAM</span>
+                    <h3>Bilbi Bayhaqi Roziqo</h3>
+                </article>
+                <article class="team-card">
+                    <div class="team-avatar">FB</div>
+                    <span class="team-role">RESEARCH TEAM</span>
+                    <h3>Fauzan Basalama</h3>
+                </article>
+                <article class="team-card">
+                    <div class="team-avatar">FA</div>
+                    <span class="team-role">RESEARCH TEAM</span>
+                    <h3>Fitria Aiesha Al Hadi</h3>
+                </article>
+                <article class="team-card">
+                    <div class="team-avatar">NS</div>
+                    <span class="team-role">RESEARCH TEAM</span>
+                    <h3>Nabilla Azka Salsabila</h3>
+                </article>
+            </div>
+
+            <div class="school-info">
+                <div class="school-mark">61</div>
+                <div>
+                    <strong>SMA NEGERI 61 JAKARTA</strong>
+                    <p>Research & Innovation · Tahun Ajaran 2026/2027</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="final-cta">
+            <div class="cta-content">
+                <div class="eyebrow light">SMART CLIMBERS COMPANION</div>
+                <h2>Technology that<br><span>looks out for you.</span></h2>
+                <p>
+                    Merancang masa depan pendakian yang lebih siap,
+                    terhubung, dan mengutamakan keselamatan.
+                </p>
+                <a href="#home" class="btn btn-primary">
+                    Kembali ke Atas ↑
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#home" class="brand footer-brand">
+            <div class="brand-icon">SCC</div>
+            <div class="brand-text">
+                <strong>SMART CLIMBERS</strong>
+                <span>COMPANION</span>
+            </div>
+        </a>
+
+        <p>
+            Sebuah rancangan inovasi wearable untuk keselamatan pendaki.
+        </p>
+
+        <span class="footer-copy">© 2026 · SMA NEGERI 61 JAKARTA</span>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
